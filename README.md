@@ -1,88 +1,50 @@
-# 🔥 Smoke Alarm Using Sensor
+# Smoke Alarm Using Sensor 🔥
 
-A cost-effective, IoT-ready smoke detection system built using the MQ-2 gas sensor and Arduino/NodeMCU. This project alerts users of smoke, LPG, methane, and other harmful gases via a buzzer and serial monitoring, offering early warning for potential fire hazards.
+A compact and cost-effective smoke detection system designed using Arduino and the MQ-2 gas sensor. This project aims to provide an early warning system for detecting smoke and harmful gases to prevent potential fire hazards in homes, industries, and public spaces.
 
----
+## 🚀 Overview
 
-## 🚀 Features
+This project involves building a smoke alarm system that uses the **MQ-2 gas sensor**, **NodeMCU ESP8266**, and **Arduino** components. It can differentiate between air quality states such as normal air, cooking smoke, and fire smoke, and triggers a buzzer alarm when a threshold is exceeded. The system is simple, low-cost, and scalable.
 
-- 🔍 Detects multiple gases: smoke, alcohol, LPG, methane, and propane
-- 🔔 Buzzer alerts when harmful gas levels are detected
-- 📊 Real-time data output via Serial Monitor
-- 🌐 Easily expandable to IoT platforms (ESP8266 ready)
+## 📦 Features
 
----
+- 🔥 Detects smoke, LPG, alcohol, propane, methane, and other gases.
+- 📡 Zigbee wireless transmission (or ESP8266 WiFi) for IoT integration.
+- 🔊 Buzzer alert system for immediate notification.
+- 🔧 Built using easily available components.
+- 📈 Real-time sensor readings and thresholds via Serial Monitor.
 
-## 🧰 Components Used
+## 🛠️ Components Used
 
-| Component             | Description                          |
-|----------------------|--------------------------------------|
-| Arduino Uno / NodeMCU | Microcontroller board                |
-| MQ-2 Gas Sensor       | Detects smoke/gases                  |
-| Buzzer                | Emits alarm sound                    |
-| PCB Board             | Circuit integration                  |
-| Jumper Wires          | For connections                      |
-| 9V Battery            | Power supply                         |
+- Arduino Uno
+- NodeMCU ESP8266
+- MQ-2 Gas Sensor
+- Buzzer (Piezoelectric)
+- Jumper Wires
+- 9V Battery & Power Supply
+- PCB Board
 
----
+## 🔧 Circuit & Working
 
-## 🧪 Working Principle
+The MQ-2 sensor detects gas concentration changes and outputs a voltage. This voltage is read by the Arduino. When it exceeds a specified threshold (e.g., due to smoke), the buzzer is triggered.
 
-The MQ-2 sensor outputs analog values depending on the gas concentration in the environment. When the value exceeds a safe threshold, the system triggers a buzzer and logs the reading to the Serial Monitor. It's ideal for real-time smoke detection in homes and small industries.
+![Block Diagram](your-diagram-link.png)
 
----
+## 🧪 Applications
 
-## 💻 Arduino Code
+- Domestic gas leakage detection
+- Industrial gas monitoring
+- Smart home automation
+- Air quality monitoring systems
+- Safety systems in public places (hospitals, malls, hotels)
 
-The project code is written in Arduino C/C++ and can be uploaded via the Arduino IDE.
+## 📈 Results
 
-**[📂 Click here to view the code → `smoke_alarm.ino`](./smoke_alarm.ino)**
+- Increased smoke/gas concentration → higher output voltage.
+- System reliably detects fire smoke and common combustible gases.
+- Real-time alert through buzzer when threshold is exceeded.
 
----
 
-## 🗂 Project Files
 
-- [`smoke_alarm.ino`](./smoke_alarm.ino): Main Arduino sketch
-- [`mini_project.pdf`](./mini_project.pdf): Detailed project documentation
-- Circuit diagrams and images (add them in `/images` folder if available)
 
----
 
-## 📷 Images
-
-> *(Add your circuit diagram, prototype photos, and screenshots here)*
-
----
-
-## ⚙️ How to Use
-
-1. Connect components as per your circuit diagram.
-2. Upload the `smoke_alarm.ino` code to the Arduino/NodeMCU.
-3. Open the Serial Monitor (9600 baud).
-4. When gas is detected, the buzzer will sound.
-
----
-
-## 🏁 Future Improvements
-
-- 📱 Add SMS or email notifications using IoT
-- ☁️ Log data to cloud (ThingSpeak, Firebase)
-- 📲 Integrate with a mobile app for alerts
-
---- 
-
-Project guided by **Dr. S. Yallamandaiah**, Department of ECE  
-**Vignan’s Nirula Institute of Technology and Science for Women**
-
----
-
-## 📄 License
-
-This project is licensed under the [MIT License](https://choosealicense.com/licenses/mit/).  
-Feel free to use, modify, and distribute this code with proper credit.
-
----
-
-## 🏷️ Tags
-
-`#Arduino` `#MQ2` `#SmokeAlarm` `#GasDetection` `#IoT` `#EmbeddedSystems`
