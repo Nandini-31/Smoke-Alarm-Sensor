@@ -69,15 +69,7 @@ The project code is written in Arduino C/C++ and can be uploaded via the Arduino
 - ☁️ Log data to cloud (ThingSpeak, Firebase)
 - 📲 Integrate with a mobile app for alerts
 
----
-
-## 🧑‍💻 Authors
-
-- S. Nandini (20NN1A04B6)  
-- B. Nikitha (20NN1A0467)  
-- M. Allabe (20NN1A0496)  
-- R. Buela (20NN1A04B1)  
-- K. Varshitha (20NN1A0485)  
+--- 
 
 Project guided by **Dr. S. Yallamandaiah**, Department of ECE  
 **Vignan’s Nirula Institute of Technology and Science for Women**
