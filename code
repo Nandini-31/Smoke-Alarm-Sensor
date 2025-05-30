@@ -1,0 +1,26 @@
+
+int buzzer = D2;           // For Arduino Uno. For NodeMCU, use GPIO number (e.g., 2)
+int smokeA0 = A0;          // Analog input from MQ-2 sensor
+int sensorThres = 600;     // Threshold value (tune as needed)
+
+void setup() {
+  pinMode(buzzer, OUTPUT);
+  pinMode(smokeA0, INPUT);
+  Serial.begin(9600);
+}
+
+void loop() {
+  int analogSensor = analogRead(smokeA0);
+
+  Serial.print("Sensor Reading (A0): ");
+  Serial.println(analogSensor);
+
+  if (analogSensor > sensorThres) {
+    digitalWrite(buzzer, HIGH); // Alarm ON
+  } else {
+    digitalWrite(buzzer, LOW);  // Alarm OFF
+  }
+
+  delay(100); // Delay to reduce noise in Serial Monitor
+}
+
