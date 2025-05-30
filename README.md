@@ -28,7 +28,6 @@ This project involves building a smoke alarm system that uses the **MQ-2 gas sen
 
 The MQ-2 sensor detects gas concentration changes and outputs a voltage. This voltage is read by the Arduino. When it exceeds a specified threshold (e.g., due to smoke), the buzzer is triggered.
 
-![Block Diagram](your-diagram-link.png)
 
 ## 🧪 Applications
 
